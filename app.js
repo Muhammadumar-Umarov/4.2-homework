@@ -67,15 +67,101 @@
 // }
 
 // 4-misol
-{
-    const info = {
-        name: "John",
-        age: 32
-    }
+// {
+//     // decloration
+//     const info = {
+//         name: "John",
+//         age: 32
+//     }
 
-    function funksiya(info){
-        return `${info.name} is ${info.age} years old`
-    }
-    console.log(funksiya(info));
+//     function funksiya(info){
+//         return `${info.name} is ${info.age} years old`
+//     }
+//     console.log(funksiya(info));
     
+//     // expression
+//     let funksiya2 = function(info){
+//         return `${info.name} is ${info.age} years old`
+//     }
+//     console.log(funksiya2(info));
+
+//     // arrow
+//     const funksiya3 = (info) => `${info.name} is ${info.age} years old`
+//     console.log(funksiya3(info));
+    
+// }
+
+// 5-misol
+{
+    // decloration
+    function findVowels(str){
+        let counter = 0;
+        for(let i = 0; i < str.length; i++){
+            if(str[i] === "a"){
+                counter++
+            }
+            if(str[i] === "o"){
+                counter++
+            }
+            if(str[i] === "i"){
+                counter++
+            }
+            if(str[i] === "e"){
+                counter++
+            }
+            if(str[i] === "u"){
+                counter++
+            }
+        }
+        return `Kiritilgan gapda ${counter}ta unli bor`    
+    }
+    console.log(findVowels("Hello world"));
+
+    // expression
+    let findVowels2 = function(str){
+        let counter = 0;
+        for(let i = 0; i < str.length; i++){
+            if(str[i] === "a"){
+                counter++
+            }
+            if(str[i] === "o"){
+                counter++
+            }
+            if(str[i] === "i"){
+                counter++
+            }
+            if(str[i] === "e"){
+                counter++
+            }
+            if(str[i] === "u"){
+                counter++
+            }
+        }
+        return `Kiritilgan gapda ${counter}ta unli bor`
+    }
+    console.log(findVowels2("Hello world"));
+
+    // arrow
+    const findVowels3 = (str) => {
+        let counter = 0;
+        for(let i = 0; i < str.length; i++){
+            if(str[i] === "a"){
+                counter++
+            }
+            if(str[i] === "o"){
+                counter++
+            }
+            if(str[i] === "i"){
+                counter++
+            }
+            if(str[i] === "e"){
+                counter++
+            }
+            if(str[i] === "u"){
+                counter++
+            }
+        }
+        return `Kiritilgan gapda ${counter}ta unli bor`        
+    }
+    console.log(findVowels3("Hello world"));
 }
